@@ -1,0 +1,35 @@
+jenkins:
+    systemMessage: "Welcome to the Chocolatine-Powered Marvin Jenkins Instance."
+    authorizationStrategy:
+      roleBased:
+        roles:
+          global:
+            - name: "admin"
+              description: "Marvin master"
+              permissions:
+                - "Overall/Administer"
+              assignments:
+                - "Hugo"
+            - name: "ape"
+              description: "Pedagogical team member"
+              permissions:
+                - "Job/Build"
+                - "Job/Read"
+              assignments:
+                - "Jeremy"
+            - name: "gorilla"
+              description: "Group Obsessively Researching Innovation Linked to Learning and Accomplishment"
+              permissions:
+                - "Job/Build"
+                - "Job/Configure"
+                - "Job/Delete"
+                - "Job/Read"
+                - "Job/Create"
+              assignments:
+                - "Garance"
+            - name: "assist"
+              description: "Assistant"
+              permissions:
+                - "Job/Read"
+              assignments:
+                - "Nassim"
